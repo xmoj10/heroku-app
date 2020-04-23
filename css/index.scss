@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Nunito&display=swap');
 $colors: (
     color1: #81D3E1,
     color2: #2C4975,
@@ -16,8 +17,20 @@ body {
     justify-content: center;
     min-width: 100vw;
     min-height: 100vh;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
-
+nav {
+    background-color: map-get($colors, color2);
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: lighten(map-get($colors, color3), 10%);
+    }
+}
 .container {
     margin: 1em 0;
     min-height: 200px;
@@ -28,8 +41,19 @@ body {
     padding: 1em;
     background-color: lighten(map-get($colors, color5), 2%);
     .main-content {
+        height: 100%;
         background-color: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        form {
+            width: 100%;
+            input {
+                margin: 1em 0;
+            }
+        }
     }
     .bottom-left {
         position: absolute;

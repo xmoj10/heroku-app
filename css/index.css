@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Nunito&display=swap");
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -16,6 +17,28 @@ body {
           justify-content: center;
   min-width: 100vw;
   min-height: 100vh;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #2C4975;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav h1 {
+  color: #ffd5d8;
 }
 
 .container {
@@ -30,8 +53,28 @@ body {
 }
 
 .container .main-content {
+  height: 100%;
   background-color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+}
+
+.container .main-content form {
+  width: 100%;
+}
+
+.container .main-content form input {
+  margin: 1em 0;
 }
 
 .container .bottom-left {

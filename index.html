@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="./js/connection.js"></script>
+    <link rel="stylesheet" href="css/index.css">    
+
     <title>Pandora's Stock</title>
 </head>
 <body>
+    <nav>
+        <h1> Pandora's Stocks</h1>
+    </nav>
     <div class="container">
         <div class="main-content">
-            <input type="file" name="user-file" id="user-file"> <br>
-            <input type="submit" value="submit" onclick="readFile()">
+            <h2>Enter a company name or stock ticker</h2>
+            <!-- <form action="https://xavier-node.herokuapp.com/"> -->
+                <form action="https://xavier-node.herokuapp.com/">
+                <!-- <input type="file" name="company" id="company"> -->
+                <input type="text" name="company" id="company" placeholder="Apple Inc."> <br>
+                <input type="text" name="ticker" id="ticker" placeholder="AAPL"> <br>
+                <input type="submit" value="submit">
+            </form>
         </div>
         <div class="bottom-left"></div>
         <div class="top-right"></div>
