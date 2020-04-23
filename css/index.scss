@@ -1,0 +1,52 @@
+$colors: (
+    color1: #81D3E1,
+    color2: #2C4975,
+    color3: #FEA3A8,
+    color4: #eeeeee,
+    color5: #eeeeee
+);
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: map-get($colors, color5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 1em 0;
+    min-height: 200px;
+    max-width: 600px;
+    width: 80%;
+    height: 100px;
+    position: relative;
+    padding: 1em;
+    background-color: lighten(map-get($colors, color5), 2%);
+    .main-content {
+        background-color: inherit;
+        text-align: center;
+    }
+    .bottom-left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 55px;
+        height: 55px;
+        border-bottom: 2px solid map-get($colors, color3);
+        border-left: 2px solid map-get($colors, color3);
+    }
+    .top-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55px;
+        height: 55px;
+        border-top: 2px solid map-get($colors, color3);
+        border-right: 2px solid map-get($colors, color3);
+    }
+}
